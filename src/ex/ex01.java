@@ -7,12 +7,20 @@
  * Date: 2016/11/28
  * Author: 1050210XX 周永振老師
  */
-
+import java.util.Random;
 public class ex01 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		Random randnum = new Random();
+		
+		randnum.setSeed(23323456);
+		int[] data = new int[6];
+		for (int i = 0; i < data.length; ++i){
+            data[i] = randnum.nextInt(6);
+        }
+		 System.out.print(data[i]);
+   
+        
 	}
 
 }
